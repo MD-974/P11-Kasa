@@ -1,0 +1,33 @@
+.cards {
+    display: grid;
+    /* Création d'une grille avec des colonnes flexibles : chaque colonne 
+       a une largeur minimale de 335px et peut s'étendre pour remplir l'espace disponible */
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    padding: 50px;
+    margin-top: 43px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    /* Espacement entre chaque ligne et colonne */
+    gap: 50px;
+}
+.cards__article {
+        display: flex;
+        align-items: flex-end;
+        height: 340px;
+        min-width: 335px;
+        border-radius: 10px;
+        background-color: #ff6060;
+        /* Dégradé linéaire de haut en bas : commence par le rouge clair 
+           en haut et se fond en un noir semi-transparent en bas */
+        background-image: linear-gradient(to bottom, #FF6060 0%, rgba(4, 4, 4, 0.205) 100%);
+    }
+
+.cards__article--title {
+        width: 300px;
+        height: 52px;
+        margin-left: 20px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25.67px;
+    }

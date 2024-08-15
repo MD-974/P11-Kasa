@@ -1,0 +1,24 @@
+.nav_ul {
+    list-style-type: none; // Enlève les puces de la liste
+    display: flex; // Utilise flexbox pour aligner les éléments
+    margin: 20px 0;
+}
+
+.nav_ul_li {
+    margin-left: 50px; // Ajoute un espace entre les éléments de la list
+}
+
+.nav_ul_li a {
+    text-decoration: none; // Enlève le soulignement des liens
+    color: black;
+}
+
+.nav_ul_li .active {
+    text-decoration: underline;
+}
+
+a {
+    font-size: 24px;
+    font-weight: 500;
+}
+
