@@ -1,7 +1,6 @@
 .cards {
     display: grid;
-    /* Création d'une grille avec des colonnes flexibles : chaque colonne 
-       a une largeur minimale de 335px et peut s'étendre pour remplir l'espace disponible */
+    /* Création d'une grille avec des colonnes flexibles */
     grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
     padding: 50px;
     margin-top: 43px;
@@ -10,24 +9,45 @@
     /* Espacement entre chaque ligne et colonne */
     gap: 50px;
 }
-.cards__article {
-        display: flex;
-        align-items: flex-end;
-        height: 340px;
-        min-width: 335px;
-        border-radius: 10px;
-        background-color: #ff6060;
-        /* Dégradé linéaire de haut en bas : commence par le rouge clair 
-           en haut et se fond en un noir semi-transparent en bas */
-        background-image: linear-gradient(to bottom, #FF6060 0%, rgba(4, 4, 4, 0.205) 100%);
-    }
 
-.cards__article--title {
-        width: 300px;
-        height: 52px;
-        margin-left: 20px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 25.67px;
-    }
+.cards__article {
+    /* Position relative pour le conteneur de l'article */
+    position: relative;
+    /* L'image reste à l'intérieur du conteneur */
+    overflow: hidden;
+    border-radius: 10px;
+    /* Hauteur fixe pour les cards */
+    height: 340px;
+    background-color: #f6f6f6;
+}
+
+.cards__image-container {
+    position: relative;
+    height: 100%;
+}
+
+.cards__image {
+    width: 100%;
+    height: 100%;
+    /* L'image couvrira toute la cards sans déformer */
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+}
+
+.cards__title {
+    /* Placer le titre au-dessus de l'image */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 20px;
+    color: white;
+    /* Dégradé pour rendre le texte lisible */
+    background: linear-gradient(transparent , rgba(0, 0, 0, 0.6));
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
