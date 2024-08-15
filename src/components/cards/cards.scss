@@ -18,7 +18,7 @@
     border-radius: 10px;
     /* Hauteur fixe pour les cards */
     height: 340px;
-    background-color: #f6f6f6;
+    background-color: #ff6060;
 }
 
 .cards__image-container {
@@ -43,11 +43,27 @@
     right: 0;
     margin: 0;
     padding: 10px 20px;
-    color: white;
-    /* Dégradé pour rendre le texte lisible */
-    background: linear-gradient(transparent , rgba(0, 0, 0, 0.6));
+    color: #ffffff;
+    // /* Dégradé pour rendre le texte lisible */
+    // background: linear-gradient(transparent , rgba(0, 0, 0, 0.6));
     font-size: 18px;
     font-weight: 700;
     line-height: 1.4;
     box-sizing: border-box;
+}
+
+.cards__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Dégradé du transparent au noir transparent avec quatre paliers */
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 0%,  /* Transparent au sommet */
+        rgba(0, 0, 0, 0.1) 50%, /* Légèrement noir transparent */
+        rgba(0, 0, 0, 0.3) 80%, /* Plus noir transparent */
+        rgba(0, 0, 0, 0.6) 100% /* Noir transparent à la base */
+    )
 }

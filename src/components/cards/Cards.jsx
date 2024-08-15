@@ -29,7 +29,9 @@ function Cards () {
                             src={logement.cover} 
                             alt={logement.title} 
                         />
-                        <p className='cards__title'>{logement.title}</p>
+                        <div className='cards__overlay'>
+                            <p className='cards__title'>{logement.title}</p>
+                        </div>
                     </div>
                 </article>
             ))}
