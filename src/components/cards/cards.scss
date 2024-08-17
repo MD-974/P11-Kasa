@@ -18,7 +18,12 @@
     border-radius: 10px;
     /* Hauteur fixe pour les cards */
     height: 340px;
-    background-color: #ff6060;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards__article:hover {
+    box-shadow: 0px 0px 10px 1px #ff6060;
+    transform: scale(1.02);
 }
 
 .cards__image-container {
