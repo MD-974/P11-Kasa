@@ -1,19 +1,16 @@
 import logements from '../../../public/logements.json';
 
+import './logement.scss';
+
 function Logement() {
     return (
         <div className="logement">
-            {logements.map((logement) => (
-                <article key={logement.id} className="logement__article">
-                    <div className="logement-container">
-                        <img 
-                            className="logement__image" 
-                            // src={logement.pictures}  
-                        />
-                        Salut, le logement
-                    </div>
-                </article>
-            ))}
+            <div>
+                <img src={logements[0].cover} alt="image du logement"/></div>
+            <div>
+                <h1>{logements[0].title}</h1>
+                <p>{logements[0].location}</p>
+            </div>
         </div>
     );
 }
