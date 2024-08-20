@@ -1,12 +1,12 @@
 
-// .collapses {
-//     display: flex;
-//     flex-direction: column;
-//     border-radius: 5px;
-//     justify-content: space-between;
-//     margin: 50px  108.5px;
-//     gap: 30px;
-// }
+.collapses {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 50px  108.5px;
+    gap: 30px;
+}
 
 .collapse-item {
     display: flex;
@@ -38,9 +38,9 @@ h3 {
 
 .collapse-text {
     font-size: 18px;
-    color: #ff6060;
+    // color: #ff6060;
     // background-color: #f6f6f6;
     padding: 10px;
-    // border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 

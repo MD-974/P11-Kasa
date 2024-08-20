@@ -11,8 +11,7 @@ function Home() {
         <main className="main">
             <Banner 
             image="/src/assets/img-home.png" 
-            label="Chez vous, partout et ailleurs"
-            brightness={0.4} // Applique 60% de luminosité 
+            label="Chez vous, partout et ailleurs" 
             />
         <Cards />
     </main>
