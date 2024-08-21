@@ -12,7 +12,7 @@ function About() {
             <Banner image="/src/assets/img-about.png" />
             {
                 collapses.map((collapse) => (
-                    <div key={collapse.id} className="collapses">
+                    <div key={collapse.id} className="collapse">
                         <Collapse content={collapse.content} title={collapse.title} />
                     </div>
                 ))

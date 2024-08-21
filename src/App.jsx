@@ -6,9 +6,6 @@ import About from "./pages/about/About";
 import Logement from "./pages/logement/Logement";
 import Error from "./pages/error/Error";
 
-import './app.scss'
-
-
 function App() {
   return (
     <BrowserRouter>
