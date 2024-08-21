@@ -1,15 +1,7 @@
-// .main {
-//     // padding: 50px 100px;
-//     padding: 0 100px;
-// }
-
 .banner {
     position: relative;
     display: flex;
     height: 233px;
-    // /* Applique une couleur de fond noire avec une opacité de 60%,
-    //   créant un effet de transparence */
-    // background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 25px;
@@ -25,10 +17,7 @@
     color: white;
     font-size: 48px;
     font-weight: 700;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
-    // /*Ajoute une bordure noire de 1px autour de chaque lettre*/
-    // -webkit-text-stroke: 1px black;
     text-shadow: 
     -1px -1px 0 #000000,
     1px -1px 0 #000000, 

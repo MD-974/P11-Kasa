@@ -4,7 +4,8 @@
     justify-content: space-between;
     padding: 50px 100px;
     height: 100%;
-    background-color: blanchedalmond;
+    gap: 30px;
+    // background-color: blanchedalmond;
 }
 
 .logement__carousel {
@@ -14,11 +15,52 @@
     background-color: aquamarine;
 }
 
-.logement__info {
-    // display: flex;
+.logement__content {
+    display: flex;
     justify-content: space-between;
-    gap: 30px;
-    width: 635px;
-    height: 77px;
-    background-color: burlywood;
+    align-items: center;
+    // background-color: rgb(223, 190, 166)
 }
+
+.logement__title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    color: #ff6060;
+}
+
+.logement__location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+}
+
+.logement__host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background-color: burlywood;
+}
+
+.logement__tags__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: coral;
+}
+.logement__collapses__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    // background-color: burlywood;
+}
+
+.logement__equipments_ul {
+    list-style: none;
+}
+
+
+
+
+
+

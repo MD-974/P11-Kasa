@@ -1,0 +1,19 @@
+.host {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.host__name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    color: #ff6060;
+    margin-right: 15px;
+}
+.host__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #C4C4C4;
+}
