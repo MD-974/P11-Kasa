@@ -1,0 +1,55 @@
+
+  .logement__carousel {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+  
+.carousel__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Assure que l'image couvre toute la zone disponible sans distorsion */
+}
+  
+.carousel__navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    padding: 0 10px; 
+    pointer-events: none;
+}
+  
+.carousel__prev,
+.carousel__next {
+    background: none;
+    border: none;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.carousel__counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 12px;
+    // pointer-events: all;
+}
+

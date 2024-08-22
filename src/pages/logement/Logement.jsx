@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import logements from "../../../public/logements.json"
+import Carousel from "../../components/Carousel/Carousel"
 import Collapse from "../../components/Collapse/Collapse"
 import Host from "../../components/Host/Host"
 import "./logement.scss"
@@ -10,7 +11,7 @@ function Logement() {
 
   return (
     <main className="logement">
-      <div className="logement__carousel">carousel</div>
+      <Carousel images={logement.pictures} />
       <div className="logement__content">
         <div className="logement__info">
           <h1 className="logement__title">{logement.title}</h1>
