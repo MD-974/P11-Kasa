@@ -6,6 +6,10 @@
 
 .nav_ul_li {
     margin-left: 50px; // Ajoute un espace entre les éléments de la list
+
+    @media screen and (max-width: 375px) {
+        margin-left: 10px;
+    }
 }
 
 .nav_ul_li a {
@@ -21,5 +25,9 @@
 a {
     font-size: 24px;
     font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 

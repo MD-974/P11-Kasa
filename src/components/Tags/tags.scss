@@ -21,3 +21,23 @@
     width: 100%;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+
+    .tag {
+        width: 90px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .logement__tag {
+        gap: 5px;
+    }
+
+    .tag__text {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+    

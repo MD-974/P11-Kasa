@@ -8,6 +8,10 @@
     justify-content: center;
     background-color: #000000;
     color: #ffffff;
+
+    @media screen and (max-width: 375px) {
+        height: 80px;
+    }
 }
 
 .footer__text {
@@ -15,5 +19,11 @@
     font-size: 24px;
     margin-top: 30px;
     text-align: center;
+
+    @media screen and (max-width: 375px) {
+        font-size: 12px;
+        width: 100px;
+        margin-top: 15px;
+    }
 }
 
