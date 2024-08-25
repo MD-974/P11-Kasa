@@ -4,6 +4,7 @@ import Carousel from "../../components/Carousel/Carousel"
 import Tags from "../../components/Tags/Tags"
 import Collapse from "../../components/Collapse/Collapse"
 import Host from "../../components/Host/Host"
+import Rating from "../../components/Rating/Rating"
 import "./logement.scss"
 
 function Logement() {
@@ -25,7 +26,9 @@ function Logement() {
       </div>
       <div className="logement__tags__rating">
         <Tags tags={logement.tags} />
-        <div className="logement__rating">rating</div>
+        <div className="logement__rating">
+          <Rating rating={logement.rating} />
+        </div>
       </div>
       <div className="logement__collapses__content">
         <div className="logement__collapses">
