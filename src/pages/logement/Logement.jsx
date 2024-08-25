@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import logements from "../../../public/logements.json"
 import Carousel from "../../components/Carousel/Carousel"
+import Tags from "../../components/Tags/Tags"
 import Collapse from "../../components/Collapse/Collapse"
 import Host from "../../components/Host/Host"
 import "./logement.scss"
@@ -23,7 +24,7 @@ function Logement() {
         </div>
       </div>
       <div className="logement__tags__rating">
-        <div className="logement__tags">tags</div>
+        <Tags tags={logement.tags} />
         <div className="logement__rating">rating</div>
       </div>
       <div className="logement__collapses__content">
