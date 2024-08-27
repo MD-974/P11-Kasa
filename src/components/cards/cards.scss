@@ -1,13 +1,24 @@
 .cards {
     display: grid;
-    /* Création d'une grille avec des colonnes flexibles */
-    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
-    padding: 50px;
+    // /* Création d'une grille avec des colonnes flexibles */
+    // grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    // padding: 50px;
     margin-top: 43px;
-    background-color: #f6f6f6;
+    // background-color: #f6f6f6;
     border-radius: 25px;
     /* Espacement entre chaque ligne et colonne */
-    gap: 50px;
+    // gap: 50px;
+    column-gap: 50px;
+    row-gap: 50px;
+
+    @media screen and (min-width: 1024px) {
+        /* Création d'une grille avec des colonnes flexibles */
+        grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+        /* Espacement entre chaque ligne et colonne */
+        gap: 50px; 
+        background-color: #f6f6f6;
+        padding: 50px;   
+    }
 }
 
 .cards__article {
