@@ -2,19 +2,28 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap; 
-  }
+
+    @media screen and (min-width: 1024px) {
+        width: auto;
+        height: 25px;
+    }
+}
   
 .tag {
     display: flex;
     background-color: #ff6060;
     color: white;
-    width: 115px;
-    height: 25px;
+    width: 84px;
+    height: 18px;
     border-radius: 10px;
     padding: 5px 10px;
     font-size: 14px;
     display: inline-block;
     white-space: nowrap;
+
+    @media screen and (min-width: 1024px) {
+        width: 115px;
+    }
 }
 
 .tag__text {
@@ -22,22 +31,15 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
 
-    .tag {
-        width: 90px;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    .logement__tag {
-        gap: 5px;
-    }
-
-    .tag__text {
-        width: 100%;
-        text-align: center;
-    }
-
+.logement__tag {
+    gap: 5px;
 }
+
+.tag__text {
+    width: 100%;
+    text-align: center;
+}
+
+
     

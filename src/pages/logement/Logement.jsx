@@ -19,13 +19,12 @@ function Logement() {
           <h1 className="logement__title">{logement.title}</h1>
           <h3 className="logement__location">{logement.location}</h3>
         </div>
-
+        <Tags tags={logement.tags} />
+      </div>
+      <div className="logement__host__rating">
         <div className="logement__host">
           <Host host={logement.host} />
         </div>
-      </div>
-      <div className="logement__tags__rating">
-        <Tags tags={logement.tags} />
         <div className="logement__rating">
           <Rating rating={logement.rating} />
         </div>
