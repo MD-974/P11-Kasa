@@ -33,8 +33,8 @@ function Carousel({ images }) {
           className="carousel__prev"
           onClick={handlePrev}
           xmlns="http://www.w3.org/2000/svg"
-          height="200"
-          width="80"
+          height="80"
+          width="47"
           viewBox="0 0 320 512"
         >
           <path
@@ -47,8 +47,8 @@ function Carousel({ images }) {
           className="carousel__next"
           onClick={handleNext}
           xmlns="http://www.w3.org/2000/svg"
-          height="200"
-          width="80"
+          height="80"
+          width="47"
           viewBox="0 0 320 512"
         >
           <path

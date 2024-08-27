@@ -20,9 +20,11 @@
   
 .carousel__image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    //height: auto;
     display: block;
     object-fit: cover;
+    border-radius:10px;
 }
   
 .carousel__navigation {
@@ -34,6 +36,7 @@
     justify-content: space-between;
     transform: translateY(-50%);
     padding: 0 20px; 
+    height: auto;
 }
   
 .carousel__prev,
@@ -41,6 +44,11 @@
     background: none;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        width: 12px;
+        height: 20px;
+    }
 }
 
 .carousel__counter {
@@ -53,5 +61,9 @@
     background-color: rgba(0, 0, 0, 0.1);
     padding: 5px 10px;
     border-radius: 15px;
+
+    @media screen and (max-width: 375px) {
+        display: none;
+    }
 }
 
