@@ -1,6 +1,6 @@
 .cards {
     display: grid;
-    margin-top: 43px;
+    margin-top: 20px;
     column-gap: 50px;
     row-gap: 20px;
     
@@ -8,6 +8,7 @@
     @media screen and (min-width: 768px) {
         /* Création d'une grille avec des colonnes flexibles */
         grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+        margin-top: 40px;
     }
 
     @media screen and (min-width: 1024px) {
