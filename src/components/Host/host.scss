@@ -1,19 +1,32 @@
 .host {
     display: flex;
     align-items: center;
-    height: 64px;
 }
+
 .host__name {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 25.67px;
+    line-height: 17.11px;
     color: #ff6060;
-    margin-right: 15px;
+    margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25.67px;
+    }
 }
+
 .host__picture {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     object-fit: cover;
     background-color: #C4C4C4;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: end;
+        width: 64px;
+        height: 64px;
+    }
 }

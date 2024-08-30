@@ -1,6 +1,4 @@
-// import Red from "../logoKasa/logoRed"
 import Nav from "../nav/nav"
-
 import "./header.scss"
 
 function Header() {

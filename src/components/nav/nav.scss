@@ -1,34 +1,43 @@
 .nav_ul {
     list-style-type: none; // Enlève les puces de la liste
-    display: flex; // Utilise flexbox pour aligner les éléments
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
 }
 
 .nav_ul_li {
-    margin-left: 50px; // Ajoute un espace entre les éléments de la list
+    margin-left: 20px; // Ajoute un espace entre les éléments de la list
 
-    @media screen and (max-width: 375px) {
-        margin-left: 10px;
+    @media screen and (min-width: 375px) {
+        margin-left: 26px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 40px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 57px;
     }
 }
 
 .nav_ul_li a {
     text-decoration: none; // Enlève le soulignement des liens
     color: black;
-}
-
-.nav_ul_li .active {
-    text-decoration: underline;
-    color: #ff6060;
-}
-
-a {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
 
+    @media screen and (min-width: 375px) {
+        font-size: 12px;
+    }
+    
     @media screen and (min-width: 1024px) {
         font-size: 24px;
         text-transform: none;
     }
+
+    &.active {
+        text-decoration: underline;
+        color: #ff6060;
+    }
 }
+
 

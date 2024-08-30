@@ -1,7 +1,6 @@
 import Banner from "../../components/banner/Banner"
 import Collapse from "../../components/Collapse/Collapse"
 import collapses from "../../../public/collapses.json"
-import "./about.scss"
 
 function About() {
   return (

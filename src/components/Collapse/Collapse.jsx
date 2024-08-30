@@ -30,7 +30,7 @@ function Collapse({ content, title }) {
         </svg>
       </div>
       {/* Contenu du collapse affiché uniquement si ouvert */}
-      {open ? <p className="collapse-text">{content}</p> : null}
+      {open ? <div className="collapse-text">{content}</div> : null}
     </div>
   )
 }

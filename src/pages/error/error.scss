@@ -2,30 +2,69 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 140px;
-    margin-bottom: 140px;
-
+    gap: 113px;
+    margin-bottom: 113px;
+    
+    @media screen and (min-width: 768px) {
+        gap: 139px;
+        margin-bottom: 139px;
+    }
 }
 
 .error404__title {
     font-weight: 700;
-    font-size: 288px;
+    font-size:96px;
+    line-height: 136.9px;
+    text-align: center;
     color: #ff6060;
+
+    @media screen and (min-width: 768px) {
+        font-size: 199px;
+        line-height: 291.69px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 288px;
+        line-height: 410.69px;
+    }
 }
 
 .error404__text {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 18px;
+    line-height: 25.67px;
+    width: 260px;
+    height: 52px;
+    text-align: center;
     color: #ff6060;
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+        line-height: 37.34px;
+        width: 550px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: 51.34px;
+        width: 100%;
+    }
 }
 
 .error404__link {
+
     font-weight: 500;
     color:black;
-    font-size: 18px;
-}
+    font-size: 14px;
+    line-height: 19.96px;
 
-// .error404__link:hover {
-//     font-weight: 700;
-//     color: #ff6060;
-// }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 22.68px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+}
