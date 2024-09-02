@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import logements from "../../../public/logements.json"
 import Carousel from "../../components/Carousel/Carousel"
 import Tags from "../../components/Tags/Tags"
@@ -11,6 +11,9 @@ function Logement() {
   const { id } = useParams()
   const logement = logements.find((l) => l.id === id)
 
+  if (!logement) {
+    return <Navigate to="/error-404" />
+  }
   return (
     <main className="logement">
       <Carousel images={logement.pictures} />
