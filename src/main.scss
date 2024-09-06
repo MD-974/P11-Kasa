@@ -14,7 +14,7 @@ html, body, #root {
 }
 
 main {
-  padding : 27px 20px 0;
+  padding : 27px 20px;
   flex-grow: 1;
 
   @media screen and (min-width: 1024px) {

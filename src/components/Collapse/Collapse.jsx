@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useRef, useState } from "react"
 import "./collapse.scss"
 
 function Collapse({ content, title }) {
+  const collapseContentRef = useRef()
   const [open, setOpen] = useState(false)
 
   return (
@@ -30,7 +31,28 @@ function Collapse({ content, title }) {
         </svg>
       </div>
       {/* Contenu du collapse affiché uniquement si ouvert */}
-      {open ? <div className="collapse-text">{content}</div> : null}
+      <div
+        className="collapse-text"
+        ref={collapseContentRef}
+        style={
+          open
+            ? { height: collapseContentRef.current.scrollHeight + "px" }
+            : { height: "0px", padding: "0px" }
+        }
+      >
+        {content.length === 1 ? (
+          // Si le contenu est unique, on l'affiche directement
+          <p>{content[0]}</p>
+        ) : (
+          // Sinon, on affiche une liste
+          <ul>
+            {content.map((item, index) => (
+              // On affiche une liste d'items
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }
